@@ -1,0 +1,31 @@
+:root{--bg:#0b0d12;--card:#151922;--line:#232a36;--txt:#e8ecf3;--mut:#8a94a7;--green:#22c55e;--red:#ef4444;--orange:#f59e0b;--blue:#60a5fa}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--txt);font:15px/1.4 system-ui,-apple-system,Roboto,sans-serif}
+header{position:sticky;top:0;z-index:2;background:var(--bg);padding:14px 16px 8px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line)}
+.brand{font-weight:700;font-size:18px}.pill{display:inline-block;font-size:11px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--line);color:var(--txt);margin-left:6px;vertical-align:middle}
+.pill.paper{background:#1e3a8a}.pill.live{background:#7f1d1d}.pill.red{background:rgba(239,68,68,.18);color:var(--red)}.pill.green{background:rgba(34,197,94,.18);color:var(--green)}
+main{padding:12px 12px 90px;max-width:560px;margin:0 auto}
+nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:#0f1218;border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
+nav button{flex:1;background:none;border:0;color:var(--mut);padding:14px 0;font-size:13px;font-weight:600}nav button.on{color:var(--txt)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:10px}
+.big{font-size:34px;font-weight:700;letter-spacing:-.5px}.muted{color:var(--mut)}.small{font-size:12px}
+.up{color:var(--green)}.down{color:var(--red)}
+.row{display:flex;justify-content:space-between;align-items:center;gap:8px}.row+.row{margin-top:6px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.agent h3{margin:0 0 4px;font-size:14px}.agent .st{font-weight:600}.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--red);margin-right:6px}.dot.ok{background:var(--green)}
+.list .item{display:flex;justify-content:space-between;gap:8px;padding:10px 0;border-bottom:1px solid var(--line)}.list .item:last-child{border:0}
+.item .t{font-weight:600}.item .s{color:var(--mut);font-size:12px}.item .v{text-align:right;font-weight:600;white-space:nowrap}
+a.btn{display:block;text-align:center;background:var(--green);color:#04130a;font-weight:700;text-decoration:none;padding:12px;border-radius:12px;margin-top:10px}
+a.btn.sell{background:var(--red);color:#fff}a{color:var(--blue)}
+canvas{width:100%;height:180px;display:block}
+.strips{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}.strip{border-radius:10px;padding:8px;background:var(--line);font-size:11px;min-height:64px}
+.strip.pass{background:rgba(34,197,94,.15)}.strip.fail{background:rgba(239,68,68,.2)}.strip b{display:block;font-size:12px;margin-bottom:2px}
+.seg{display:flex;gap:6px;margin-bottom:10px}.seg button{flex:1;background:var(--card);border:1px solid var(--line);color:var(--mut);border-radius:10px;padding:8px;font-size:12px}.seg button.on{color:var(--txt);border-color:var(--mut)}
+.back{background:none;border:0;color:var(--blue);padding:4px 0 10px;font-size:14px}
+code{font-size:12px;background:var(--line);padding:1px 5px;border-radius:5px}
+.empty{padding:40px 16px;text-align:center;color:var(--mut)}
+.odo{display:inline-flex;overflow:hidden;height:1.15em;line-height:1.15em}.odo .col{display:flex;flex-direction:column;transition:transform .8s cubic-bezier(.2,.8,.2,1)}.odo .col span{height:1.15em}
+.carousel{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -12px 10px;padding:0 12px}.carousel .card{flex:0 0 72%;scroll-snap-align:start;margin:0}
+.pipe .card{position:relative}.pipe .card:not(:last-child)::after{content:"↓";position:absolute;left:50%;bottom:-17px;color:var(--mut);font-size:12px}
+.discs{display:flex;justify-content:space-between;margin:6px 0 12px}.disc{width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;background:var(--line);color:var(--mut)}
+.disc.pass{background:var(--green);color:#04130a}.disc.fail{background:var(--red);color:#fff}
+.ranges{display:flex;gap:4px;margin-top:6px}.ranges button{flex:1;background:none;border:0;color:var(--mut);font-size:11px;font-weight:600;padding:4px;border-radius:6px}.ranges button.on{background:var(--line);color:var(--txt)}
